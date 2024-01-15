@@ -9,11 +9,10 @@ function usePlanets() {
     const fetchedPlanets = await httpGetPlanets();
     savePlanets(fetchedPlanets);
   }, []);
-  
+
   useEffect(()=>{
     console.log(planets);
-
-  }, [planets]);
+  }, [planets])
 
   useEffect(() => {
     getPlanets();
